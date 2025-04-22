@@ -1,0 +1,45 @@
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  // Info
+  .info {
+    display: flex;
+    gap: 10px;
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+
+    div {
+      h5 {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      p {
+        color: rgb(150, 150, 150);
+      }
+    }
+  }
+
+  // Audio
+  audio {
+    width: 40%;
+    @include lg {
+      width: 60%;
+    }
+  }
+
+  // Icons
+  .icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    margin-right: 20px;
+    @include lg {
+      display: none;
+    }
+  }
+}

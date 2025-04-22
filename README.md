@@ -1,0 +1,1 @@
+Spotify uygulamasının bir benzerini scss ve javascript kullanrak yapılmış bir projedir.

@@ -1,0 +1,126 @@
+main {
+  background-color: $grayColor;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 20px;
+
+  // Header
+  header {
+    background-color: $blackColor;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+    gap: 20px;
+    // Form
+    form {
+      display: flex;
+      width: 100%;
+      box-shadow: 0 0 8px;
+      max-width: 350px;
+      border-radius: 5px;
+      @media (max-width: 650px) {
+        max-width: unset;
+      }
+      input {
+        background: transparent;
+        padding: 15px;
+        width: 100%;
+        color: $textColor;
+      }
+      button {
+        background: none;
+        color: $textColor;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+    }
+
+    // Nav
+    nav {
+      display: flex;
+      gap: 15px;
+      @media (max-width: 650px) {
+        display: none;
+      }
+
+      span {
+        font-size: 14px;
+        cursor: pointer;
+        white-space: nowrap;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+  // Section
+  section {
+    margin-top: 20px;
+    flex: 1;
+
+    #list {
+      margin-top: 20px;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      .card {
+        background-color: #121212;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 10px;
+        height: fit-content;
+        &:hover .play {
+          opacity: 1;
+          bottom: 20px;
+        }
+        figure {
+          position: relative;
+          img {
+            width: 100%;
+            border-radius: 10px;
+          }
+
+          .play {
+            position: absolute;
+            background-color: $greenColor;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 23px;
+            right: 10px;
+            bottom: -20px;
+            transition: all 0.3s;
+            opacity: 0;
+            &:hover {
+              background-color: #0f6d32;
+              scale: 1.1;
+              rotate: 360deg;
+            }
+            i {
+              pointer-events: none;
+              // İkonun imleç olaylarını yok et
+            }
+          }
+        }
+        .card-info {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
