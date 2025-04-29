@@ -1,5 +1,7 @@
 🎵 Spotify Clone
-A responsive and interactive Spotify clone built with HTML, CSS, and JavaScript. This project mimics the core UI/UX of Spotify’s web player, allowing users to interact with a simple playlist, control audio playback, and enjoy a familiar music experience.
+A responsive and interactive Spotify clone built with HTML, CSS, SCSS and JavaScript. This project mimics the core UI/UX of Spotify’s web player, allowing users to interact with a simple playlist, control audio playback, and enjoy a familiar music experience.
+
+![Image](https://github.com/user-attachments/assets/0ba94ed1-55ae-4beb-ac2d-7a205d9472f8)
 
 🚀 Features
 🎧 Play / Pause functionality
@@ -20,6 +22,8 @@ A responsive and interactive Spotify clone built with HTML, CSS, and JavaScript.
 HTML
 
 CSS
+
+SCSS
 
 JavaScript 
 
